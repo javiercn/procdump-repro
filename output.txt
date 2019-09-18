@@ -1,0 +1,134 @@
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Application     procdump.exe                                       9.0.0.0    C:\work\tools\procdump.exe
+Microsoft (R) Build Engine version 16.3.0-preview-19455-02+4a2d77107 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 9/18/2019 10:51:41 AM.
+     1>Project "C:\work\repros\procdump\procdump.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "C:\work\repros\procdump\procdump.sln" (1) is building "C:\work\repros\procdump\ConsoleFull\ConsoleFull.csproj" (2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Deleting file "C:\work\repros\procdump\ConsoleFull\bin\Debug\ConsoleFull.exe.config".
+         Deleting file "C:\work\repros\procdump\ConsoleFull\bin\Debug\ConsoleFull.exe".
+         Deleting file "C:\work\repros\procdump\ConsoleFull\bin\Debug\ConsoleFull.pdb".
+         Deleting file "C:\work\repros\procdump\ConsoleFull\obj\Debug\ConsoleFull.exe".
+         Deleting file "C:\work\repros\procdump\ConsoleFull\obj\Debug\ConsoleFull.pdb".
+     1>Project "C:\work\repros\procdump\procdump.sln" (1) is building "C:\work\repros\procdump\ConsoleCore\ConsoleCore.csproj" (3) on node 2 (Clean target(s)).
+     3>_CheckForNETCoreSdkIsPreview:
+         You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+     2>Done Building Project "C:\work\repros\procdump\ConsoleFull\ConsoleFull.csproj" (Clean target(s)).
+     3>CoreClean:
+         Deleting file "C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.exe".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.deps.json".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.runtimeconfig.json".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.runtimeconfig.dev.json".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.dll".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.pdb".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\obj\Debug\netcoreapp3.0\ConsoleCore.csprojAssemblyReference.cache".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\obj\Debug\netcoreapp3.0\ConsoleCore.AssemblyInfoInputs.cache".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\obj\Debug\netcoreapp3.0\ConsoleCore.AssemblyInfo.cs".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\obj\Debug\netcoreapp3.0\ConsoleCore.dll".
+         Deleting file "C:\work\repros\procdump\ConsoleCore\obj\Debug\netcoreapp3.0\ConsoleCore.pdb".
+     3>Done Building Project "C:\work\repros\procdump\ConsoleCore\ConsoleCore.csproj" (Clean target(s)).
+     1>Done Building Project "C:\work\repros\procdump\procdump.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.27
+Microsoft (R) Build Engine version 16.3.0-preview-19455-02+4a2d77107 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 14.59 ms for C:\work\repros\procdump\ConsoleCore\ConsoleCore.csproj.
+  ConsoleFull -> C:\work\repros\procdump\ConsoleFull\bin\Debug\ConsoleFull.exe
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+  ConsoleCore -> C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.92
+Microsoft (R) Build Engine version 16.3.0-preview-19455-02+4a2d77107 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 16.76 ms for C:\work\repros\procdump\ConsoleCore\ConsoleCore.csproj.
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+  ConsoleCore -> C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\ConsoleCore.dll
+  ConsoleCore -> C:\work\repros\procdump\ConsoleCore\bin\Debug\netcoreapp3.0\publish\
+
+ProcDump v9.0 - Sysinternals process dump utility
+Copyright (C) 2009-2017 Mark Russinovich and Andrew Richards
+Sysinternals - www.sysinternals.com
+
+Process:               ConsoleFull.exe (33360)
+CPU threshold:         n/a
+Performance counter:   n/a
+Commit threshold:      n/a
+Threshold seconds:     n/a
+Hung window check:     Disabled
+Log debug strings:     Disabled
+Exception monitor:     First Chance+Unhandled
+Exception filter:      [Includes]
+                       *''*
+                       [Excludes]
+Terminate monitor:     Disabled
+Cloning type:          Disabled
+Concurrent limit:      n/a
+Avoid outage:          n/a
+Number of dumps:       1
+Dump folder:           .\
+Dump filename/mask:    PROCESSNAME_YYMMDD_HHMMSS
+Queue to WER:          Disabled
+Kill after dump:       Disabled
+
+
+Press Ctrl-C to end monitoring without terminating the process.
+
+CLR Version: v4.0.30319
+
+[10:51:44] Exception: E0434F4D.System.InvalidOperationException ("Exception from .NET")
+[10:51:44] The process has exited.
+[10:51:44] Dump count not reached.
+
+
+ProcDump v9.0 - Sysinternals process dump utility
+Copyright (C) 2009-2017 Mark Russinovich and Andrew Richards
+Sysinternals - www.sysinternals.com
+
+Process:               ConsoleCore.exe (36724)
+CPU threshold:         n/a
+Performance counter:   n/a
+Commit threshold:      n/a
+Threshold seconds:     n/a
+Hung window check:     Disabled
+Log debug strings:     Disabled
+Exception monitor:     First Chance+Unhandled
+Exception filter:      [Includes]
+                       *''*
+                       [Excludes]
+Terminate monitor:     Disabled
+Cloning type:          Disabled
+Concurrent limit:      n/a
+Avoid outage:          n/a
+Number of dumps:       1
+Dump folder:           .\
+Dump filename/mask:    PROCESSNAME_YYMMDD_HHMMSS
+Queue to WER:          Disabled
+Kill after dump:       Disabled
+
+
+Press Ctrl-C to end monitoring without terminating the process.
+
+[10:51:45] Exception: 04242420
+[10:51:45] Exception: E0434352.CLR
+[10:51:45] Unhandled: E0434352.CLR
+[10:51:45] Dump 1 initiated: .\ConsoleCore.exe_190918_105145.dmp
+[10:51:45] Dump 1 complete: 1 MB written in 0.1 seconds
+[10:51:45] Dump count reached.
+
+
